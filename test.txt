@@ -1,10 +1,10 @@
 "Gamemode"
 {
-	"name"		"Skeleton"
+	"name"		"Test"
 	"version"	"1.0"
 
-	"author_name"	""
-	"author_email"	""
+	"author_name"	"Esa Varemo"
+	"author_email"	"esa@kuivanto.fi"
 	"author_url"	""
 	
 	"icon"		""
