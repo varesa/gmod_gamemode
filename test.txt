@@ -1,13 +1,12 @@
 "Gamemode"
 {
-	"name"		"Test"
-	"version"	"1.0"
+	"base"		"base"
+	"title"		"Test"
+	"menusystem"	"1"
+	"workshopid"	"15895"
 
-	"author_name"	"Esa Varemo"
-	"author_email"	"esa@kuivanto.fi"
-	"author_url"	""
-	
-	"icon"		""
-	"info"		""
-	"hide"		""
+	"settings"
+	{
+
+	}	
 }
