@@ -1,9 +1,9 @@
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
+AddCSLuaFile( "cl_hud.lua" )
 
 include( 'shared.lua' )
-
 
 // Serverside only stuff goes here
 
@@ -13,8 +13,8 @@ include( 'shared.lua' )
 ---------------------------------------------------------*/
 function GM:PlayerLoadout( pl )
 
-	pl:GiveAmmo( 255,	"Pistol", 		true )
+	--pl:GiveAmmo( 255,	"Pistol", 		true )
 	
-	pl:Give( "empty_weapon" )
+	--pl:Give( "empty_weapon" )
 	
 end
