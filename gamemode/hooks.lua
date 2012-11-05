@@ -10,13 +10,13 @@ function OnPlayerUse( ply, ent )
 		CooldownEnd[ply] = 0
 	end
 	
-	if ent:GetName() == "btn1" then
+	if ent:GetName() == "btnStart" then
 		if RealTime() > CooldownStart[ply] + 1 then
 			ply:SetNWInt( "StopwatchBegin", RealTime() )
 			ply:SetNWInt( "StopwatchEnd", -1 )
 			CooldownStart[ply] = RealTime()
 		end
-	elseif ent:GetName() == "btn2" then
+	elseif ent:GetName() == "btnStop" then
 		if RealTime() > CooldownEnd[ply] + 1 and  ply:GetNWInt( "StopwatchEnd", -1) == -1 then
 			ply:SetNWInt( "StopwatchEnd", RealTime() )
 		end
