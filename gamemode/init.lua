@@ -4,6 +4,7 @@ AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_hud.lua" )
 
 include( 'shared.lua' )
+include( 'hooks.lua' )
 
 // Serverside only stuff goes here
 
