@@ -25,3 +25,16 @@ end
 
 print("Initialising serverside OnPlayerUse hook")
 hook.Add( "PlayerUse", "OnPlayerUse", OnPlayerUse )
+
+function GM:ShouldCollide( ent1, ent2 )
+	if ( ent1:IsPlayer() and ent2:GetName() == "btnStart" ) then
+		if ent1:GetNWInt( "StopwatchBegin", -1) != -1 then
+			return false
+		end
+	elseif ( ent2:IsPlayer() and ent1:GetName() == "btnStart" ) then
+		if ent2:GetNWInt( "StopwatchBegin", -1) != -1 then
+			return false
+		end
+	end
+	return true
+end
